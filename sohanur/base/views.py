@@ -206,3 +206,9 @@ def updateProfile(request):
 
 	context = {'form':form}
 	return render(request, 'base/profile_form.html', context)
+
+def appointment(request):
+	return render (request, 'base/appointment.html')
+
+def blog(request):
+	return render (request, 'base/blog.html')

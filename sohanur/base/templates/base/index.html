@@ -42,6 +42,10 @@
 </head>
 <body>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow35.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+	<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+	
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
@@ -54,7 +58,7 @@
 
 				<div class="left-column">
 					<img id="profile_pic" src="{% static 'images/sohanur2.jpg' %}">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+					
 					
 					<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -215,7 +219,7 @@
 										<div class="card-flyer">
 											<div class="text-box">
 												<div class="image-box">
-													<img src="{% static 'images/sohanur2.jpg' %}" alt="" />
+													<img src="https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png" alt="" />
 												</div>
 												<div class="text-container">                                    
 													<h6>Title 02</h6>
@@ -362,6 +366,7 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
+
 			<!-- <form id="contact-form" method="POST" action="{% url 'send_email' %}"> -->
 			<form id="contact-form"  action="">
 				{% csrf_token %}
@@ -442,6 +447,9 @@ wpac_init.push({widget: 'Comment', id: 30450});
 </script>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6091143a22a36fc5"></script>
+
+<h3></h3><!-- Start BawkBox Code--><script data-sil-id="60a9ed1b1e9f55001e671f53">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/feedback/60a9ed1b1e9f55001e671f53?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-feedback sil-widget" id="sil-widget-60a9ed1b1e9f55001e671f53"><a href="//bawkbox.com/install/feedback"></a></div><!-- End BawkBox Code-->
+<h3></h3><!-- Start BawkBox Code--><script data-sil-id="60a9f24b1e9f55001e6720b0">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/customer-chat/60a9f24b1e9f55001e6720b0?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-customer-chat sil-widget" id="sil-widget-60a9f24b1e9f55001e6720b0"><a href="//bawkbox.com/install/customer-chat">Customer Chat</a></div><!-- End BawkBox Code-->
 
 </body>
 </html>

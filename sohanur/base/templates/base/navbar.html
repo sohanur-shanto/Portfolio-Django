@@ -12,14 +12,22 @@
 	
 
 	<ul id="navigation">
+		<li><a href="{% url 'home' %}"> Home</a></li>
+		<li><a href="{% url 'appointment' %}"> Appointment</a></li>
 		<h2  id="close-btn" style="text-align: center">X</h2>
 		<li><a href="{% url 'home' %}#contact"> Contact</a></li>
+		
 		{% if request.user.is_authenticated %}
 			<!-- <li><a href="{% url 'account' %}"> Account</a></li> -->
 			<li><a href="{% url 'logout' %}">Logout</a></li>
 		{% else %}
 			<!-- <li><a href="{% url 'login' %}">Login</a></li> -->
 		{% endif %}
+
+		<li><a href="{% url 'blog' %}"> Blog</a></li>
+		<br>
+		
+
 	</ul>
 
 	<img id="menu-icon" src="{% static 'images/menu.png' %}">

@@ -137,13 +137,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = "sohanur.shanto@northsouth.edu"
-# EMAIL_HOST_PASSWORD = 'shanto1620957'
-
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
@@ -155,19 +148,5 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-
-
-#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-#AWS_ACCESS_KEY_ID = 'YOUR-AWS-ACCESS-KEY-ID'
-#AWS_SECRET_ACCESS_KEY = 'YOUR_AWS-SECRET-ACCESS-KEY'
-#AWS_STORAGE_BUCKET_NAME = 'YOU_BUCKET_NAME'
-
-#AWS_S3_FILE_OVERWRITE = False
-#AWS_DEFAULT_ACL = None
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
