@@ -1,4 +1,4 @@
-# Portfolio Demo
+# Portfolio Demo (wait for it since it is converted into gif so it will take time)
 
 
 <p align="center">
